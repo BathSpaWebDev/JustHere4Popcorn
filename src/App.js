@@ -7,6 +7,7 @@ function App() {
   const [ cart, setCart ] = useState ([])
   const [ DVDsStorge, LoadDVDsStorge ] = useState([])
   const [ totalcost, setTotalcost] = useState(0.0)
+  const [ dvdstock, setdvdStock ] = useState()
 
   return (
     <div>
@@ -17,7 +18,10 @@ function App() {
                                                 DVDsStorge = {DVDsStorge}
                                                 LoadDVDsStorge={LoadDVDsStorge}
                                                 totalcost = {totalcost}
-                                                setTotalcost={setTotalcost}/>}></Route>
+                                                setTotalcost={setTotalcost}
+                                                dvdstock={dvdstock}
+                                                setdvdStock={setdvdStock}/>}>
+                                                </Route>
         </Routes>      
       </BrowserRouter>
     </div>

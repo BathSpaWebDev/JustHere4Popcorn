@@ -1,5 +1,4 @@
 import AddItemfunc from '../AddItemfunc';
-import RemoveItemfunc from '../RemoveItemfunc';
 import './DVDsItem.css';
 
 function DVDsItem(props){
@@ -17,9 +16,9 @@ function DVDsItem(props){
         </div>
         <AddItemfunc DVD = {props.DVD}
                      cart = {props.cart}
-                     setCart={props.setCart}
+                     setCart = {props.setCart}
                      totalcost = {props.totalcost}
-                     setTotalcost={props.setTotalcost} />
+                     setTotalcost = {props.setTotalcost} />
     </div>
     )    
 }

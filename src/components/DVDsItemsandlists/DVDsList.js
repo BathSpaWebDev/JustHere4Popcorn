@@ -6,6 +6,7 @@ function DVDsList(props){
         <div className="dvdContainer">    
         {props.DVDsStorge.map((DVD, i) => (
             <DVDsItem DVD = {DVD}
+                key = {i}
                 cart = {props.cart} 
                 setCart={props.setCart} 
                 totalcost = {props.totalcost} 

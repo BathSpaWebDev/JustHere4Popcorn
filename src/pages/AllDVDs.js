@@ -19,7 +19,7 @@ function AllDVDsPage(props) {
             <button className='btn' onClick={()=>setopenCart(true)}>Check Out<span> ({props.cart.length})</span></button>
             <button className='btn' onClick={()=>setopenCart(false)}>Close Check Out</button>
             {openCart && <Cartstorage cart = {props.cart} setCart = {props.setCart} totalcost = {props.totalcost} setTotalcost = {props.setTotalcost}/>}          
-            <DVDsList DVDsStorge={props.DVDsStorge} cart = {props.cart} setCart={props.setCart} totalcost = {props.totalcost} setTotalcost={props.setTotalcost}/>            
+            <DVDsList DVDsStorge={props.DVDsStorge} cart = {props.cart} setCart={props.setCart} totalcost = {props.totalcost} setTotalcost={props.setTotalcost} dvdstock={props.dvdstock} setdvdStock={props.setdvdStock}/>            
           </section>
         );
       }
