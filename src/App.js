@@ -20,7 +20,8 @@ function App() {
                                                 totalcost = {totalcost}
                                                 setTotalcost={setTotalcost}
                                                 dvdstock={dvdstock}
-                                                setdvdStock={setdvdStock}/>}>
+                                                setdvdStock={setdvdStock}
+                                                />}>
                                                 </Route>
         </Routes>      
       </BrowserRouter>

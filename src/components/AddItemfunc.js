@@ -3,8 +3,8 @@ function AddItemfunc(props) {
     const addtoCart = (props) => {
         props.setCart([...props.cart, props.DVD])
         props.setTotalcost(props.totalcost + Number(props.DVD.price.replace(/[^0-9.-]+/g,"")))
-        props.DVD.stock -= 1
-        console.log(props.DVD.stock)
+        //props.minusStock()
+        props.DVD.stock -=1
     }
 
     return (

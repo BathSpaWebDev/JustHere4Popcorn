@@ -15,7 +15,7 @@ function Cartstorage(props) {
                         <div key={i} className="cartItem">
                             <p>{DVD.movie}</p>
                             <p>{DVD.price}</p>
-                            <RemoveItemfunc selectedDVD = {DVD} cart = {props.cart} setCart = {props.setCart} totalcost = {props.totalcost} setTotalcost = {props.setTotalcost} />
+                            <RemoveItemfunc selectedDVD = {DVD} cart = {props.cart} setCart = {props.setCart} totalcost = {props.totalcost} setTotalcost = {props.setTotalcost} DVDsStorge={props.DVDsStorge}/>
                         </div>                                   
                     )}                    
                 </div>              

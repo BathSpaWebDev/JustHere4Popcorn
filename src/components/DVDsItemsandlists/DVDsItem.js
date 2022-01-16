@@ -14,11 +14,13 @@ function DVDsItem(props){
             <p>{props.DVD.price}</p>
             <p>Stock: {props.DVD.stock}</p>
         </div>
-        <AddItemfunc DVD = {props.DVD}
+        { props.DVD.stock === 0 ? <h3>Out of Stock</h3> :<AddItemfunc DVD = {props.DVD}
                      cart = {props.cart}
                      setCart = {props.setCart}
                      totalcost = {props.totalcost}
-                     setTotalcost = {props.setTotalcost} />
+                     setTotalcost = {props.setTotalcost}
+                      />
+        }
     </div>
     )    
 }

@@ -2,6 +2,7 @@ import './DVDsItem.css';
 import DVDsItem from './DVDsItem';
 
 function DVDsList(props){
+   
     return (
         <div className="dvdContainer">    
         {props.DVDsStorge.map((DVD, i) => (
