@@ -12,7 +12,7 @@ function DVDsItem(props){
             <p>{props.DVD.genre.join(" | ")}</p>
             <p>{props.DVD.year}</p>
             <p>{props.DVD.price}</p>
-            <p>Stock: {props.DVD.stock}</p>
+            { props.DVD.stock < 10 && props.DVD.stock > 0 ? <p>Only <span>{props.DVD.stock}</span> left in stock</p> : <p>Stock: {props.DVD.stock}</p>}
         </div>
         { props.DVD.stock === 0 ? <h3>Out of Stock</h3> :<AddItemfunc DVD = {props.DVD}
                      cart = {props.cart}
