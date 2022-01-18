@@ -54,7 +54,7 @@ function AllDVDsPage() {
   console.log(movies.length, selectedPage);
   return (
     <section>
-      <h1>All DVDs</h1>
+      <h1>Just for Popcorn</h1>
       <div>
         <input
           type="search"
